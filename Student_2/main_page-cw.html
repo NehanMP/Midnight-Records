@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>main page_cw</title>
+		<link rel="stylesheet" type="text/css" href="style_sheet.css">
+		
+		
+		<style>
+			
+			body{
+				color :#FAF9F6;
+				padding-top: 40px;
+				margin: 0; /* Reset default margin */
+			}
+			
+			
+			
+			.introduction {
+				padding-top: 50px;
+				height :90%;
+				background: rgb(1,8,17);
+				justify-content: center;
+				text-align: center;
+				font-size:50px;
+			}
+			
+			.introduction h3{
+				font-size: 25px;
+				color:#EAEAEA;
+			}
+					
+			.artists {
+				text-align: center;
+			}
+
+			.artists_row {
+				display: flex;
+				justify-content: center;
+				gap: 30px;
+				margin-bottom: 30px;
+			}
+
+			.artist_card {
+				width: 250px;
+				height: 250px;
+				margin: 10px;
+				overflow: hidden; /* To hide the overflow when the image is zoomed */
+				transition: 0.3s;
+			}
+
+			.artist_card img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				transition: 0.3s;
+			}
+
+			/* Zoom effect on hover */
+			.artist_card:hover {
+				transform: scale(1.5);
+			}
+			
+			artists_row : hover.artist_Card:not(:hover) img{
+				filter: grayscale(80%);
+			}
+			
+			artists_row .artist_card:not(last-child){
+				margin-right:20px;
+			}
+			
+			
+			.releases{
+				background-image: url("bp concert pic.jpg");
+				height: 150%;
+				width:100%;
+				opacity: 70%;
+				background-attachment: fixed
+				
+			}
+			
+			.releases h3{
+				text-align: center;
+				padding-top: 250px;
+				margin-bottom:30px;
+			}
+			
+			.releases h4{
+				text-align: center;
+				padding-top: 50px;
+				margin-bottom:10px;
+				color: #D1B5E1;
+			}
+			
+			.button {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 30vh; /* Adjust this as needed */
+			}
+
+			/* Style the checkout button */
+			.checkout-button {
+				padding: 15px 30px;
+				font-size: 18px;
+				background-color: #483248;
+				color: white;
+				border: none;
+				border-radius: 25px;
+				cursor: pointer;
+			}
+
+			/* Add hover effect for the button */
+			.checkout-button:hover {
+				background-color: #8a2be2;
+			}
+
+			/* Add a box-shadow to create a raised effect when clicked */
+			.checkout-button:active {
+				box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+			}
+			
+			/*style for the section which has links to additional webpages*/
+			.webpage-links{
+				display:flex;
+				flex-direction: column;
+				align-items: center;
+				padding: 20px;
+				padding-top:80px;
+
+			}
+			
+			.row {
+				justify-content: center;
+				display: flex;
+				margin-bottom: 10px;
+			}
+			
+			.card{
+				position: relative;
+				width: 300px;
+				height: 300px;
+				border-radius: 20px;
+				box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+				margin: 10px;
+				overflow: hidden;
+				margin: 0 65px;
+				margin-bottom: 55px; 
+				
+
+			}
+			.card img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover; 
+				transition: transform 0.3s ease;
+			}
+			
+			.card-overlay {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0, 0, 0, 0.5); /*dark filter */
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				opacity: 0;
+				transition: opacity 0.3s ease;
+			}
+			
+			.card-overlay h4{
+				color: #E0E0E0;
+				font-size: 24px;
+				text-align: center;
+				margin: 0;
+				padding: 10px;
+			}
+			
+			.card :hover img{
+				transform : scale(1.1);
+		
+			}
+			
+			.card:hover .card-overlay {
+				opacity: 1;
+			}
+			
+			
+			
+			
+			/*style for footer*/
+			.editor{
+				color: black;
+				text-align: center;
+				padding-left: 135px;
+			}
+
+			.back-top{
+				color: black;
+				float: right;
+			}
+
+			.back-top:hover{
+				color: blue;
+			}
+
+			.editor:hover{
+				color: blue;
+			}
+					
+
+			.icon-imgs{
+				margin-top: 13px;
+				align-items: center;
+				width: auto;
+				height: 30px;
+				margin-right: 18px;
+			}
+
+
+			.socials{
+				width: 100%;
+				text-align: center;     
+				background-color: purple;
+				
+			}
+						
+		</style>		
+	</head>
+	<body>
+	
+		<header>
+		
+			<div class="logo-container">
+				<img src="logo1.png" alt="" class="nav-logo-img">
+				<span class="label_name">Midnight Records</span>
+			</div>
+			<nav id ="nav">
+					
+				<ul>
+					<li><a href="../Student_2/main_page-cw.html">Home</a></li>
+					<li><a href="../Student_1/shop.html">Store</a></li>
+					<li><a href="../Student_4/gallery.html">Events</a></li>
+					<li><a href="../Student_3/questionpage.html">Quiz</a></li>
+					<li><a href="../Student_4/Sitemap.html">Sitemap</a></li>
+					<li><a href="../Student_3/studentdetails.html">AboutUs</a></li>
+					<li><a href="../Student_2/comments_form.html">Feedback</a></li>		
+					
+				</ul>
+			</nav>
+		</header>
+		
+		<section class = "introduction">
+			<h1>MIDNIGHT RECORDS</h1>
+			<h3>"Unlocking the Pulse of a New Midnight Era"</h3>
+		</section>
+		
+		
+		
+		<section class = "artists">
+			<h3>OUR ARTISTS</h3>
+			<div class = "artists_row">
+				<div class = "artist_card">
+					<img src = "itzy-card.jpg" alt ="Itzy">
+				</div>
+				
+				<div class = "artist_card">
+					<img src = "blackpink-card.jpg" alt ="Blackpink">
+				</div>
+				
+				<div class = "artist_card">
+					<img src = "westlife-card.jpg" alt ="WestLife">
+				</div>	
+			</div>	
+			<div class = "artists_row">
+				<div class = "artist_card">
+					<img src = "1d-card.jpg" alt ="One Direction">
+				</div>	
+				
+				<div class = "artist_card">
+					<img src = "redvelvet-card.jpg" alt ="Red Velvet">
+				</div>	
+				
+				<div class = "artist_card">
+					<img src = "5thharmony.jpg" alt ="Fifth Harmony">
+				</div>	
+				
+			</div>
+
+			
+			<div class="button">
+				<a href="../Student_1/additional.html" class="checkout-link">
+					<button class="checkout-button">Check out!</button>
+				</a>
+			</div>
+		</section>
+		
+		<section class = "releases">
+				<h3>Buy your favourite Artists' Latest Great Hits from our online store!</h3>
+				<h4>Click the button below to go to our store!</h4>
+			<div class="button">
+				<a href="../Student_1/shop.html" class="checkout-link">
+					<button class="checkout-button">Check out!</button>
+				</a>
+			</div>
+		</section>
+		
+		
+		
+		<section class = "webpage-links">
+			<div class = "row">
+		
+				<a class="card" href="../Student_1/additional.html">
+					<img src="Artists-card-img.jpeg" alt="Artists">
+					<div class="card-overlay">
+						<h4>Artists</h4>
+					</div>
+				</a>
+				<a class ="card" href="album_.html">
+					<img src="bornpink.jpg" alt="Albums">
+					<div class="card-overlay">
+						<h4>Latest Albums</h4>
+					</div>
+				</a>	
+			</div>		
+			<div class = "row">
+				
+				<a class ="card" href="../Student_4/Additionalpage.html">
+					<img src="Multimedia-card.jpg" alt="Multimedia">
+					<div class="card-overlay">
+						<h4>Multimedia</h4>
+					</div>
+				</a>
+				<a class ="card" href="../Student_3/upcomingevents.html">
+					<img src="Events-card.jpg" alt="Events">
+					<div class="card-overlay">
+						<h4>Upcoming Events</h4>
+					</div>
+				</a>
+			</div>	
+		</section>
+		
+		<script>
+			function setActive() {
+			  aObj = document.getElementById('nav').getElementsByTagName('a');
+			  // Loop through each anchor element
+			  for (i = 0; i < aObj.length; i++) {
+				//check if the href attribute of current page has the anchor element's URL
+				if (document.location.href.indexOf(aObj[i].href) >= 0) {
+					// Add the "active" class to the <a> element
+					aObj[i].classList.add('active'); 
+					// Add the "active" class to the parent <li> element
+					aObj[i].parentNode.classList.add('active'); 
+				}
+			  }
+			}
+
+			// Call the function once the HTML elements are loaded
+			document.addEventListener('DOMContentLoaded', setActive);
+		</script>
+		
+		
+		<hr>
+        <div class="socials">          
+            <a href="https://twitter.com/UniWestminster?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"> <img src="twitwe.png" alt="twiter" class="icon-imgs"></a>
+
+            <a href="https://www.facebook.com/UniOfWestminster/" target="_blank"> <img src="facebook.png"  alt="facebook" class="icon-imgs"></a>    
+
+            <a href="https://www.instagram.com/uniwestminster/?hl=en" target="_blank"> <img src="instagram.png" alt="instagram" class="icon-imgs"></a> 
+
+            <a href="https://www.youtube.com/@UniOfWestminster" target="_blank"> <img src="youtube.png" alt="youtube" class="icon-imgs"></a>         
+            <br><br>
+            <p style="text-align: center; font-size: 1.5rem;">All Rights and reserved</p><br>
+   
+            <a href="pageEditor.html" class="editor">Created by Nattasha Villawarayen</a>
+        	<a href="#top" class="back-top">↑Back to Top</a> 
+                     
+        </div>
+			
+				
+		
+		
+		
+	</body>
+</html>
+

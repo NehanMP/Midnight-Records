@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+       @keyframes fadeIn {
+                from {
+                    opacity: 0; 
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+        body {
+            margin: 0;
+            font-family:sans-serif;
+            background-image: url("darkmusic.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+ 		    background-attachment: fixed;
+            opacity: 0; /* Set initial opacity to 0 */
+            animation: fadeIn 1.5s ease-in-out forwards;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            background-color: #333;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .navbar ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar li {
+            display: inline;
+            margin-right: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 10px;
+        }
+
+        .navbar li a:hover {
+            color: #ff0;
+        }
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            margin-top: 20px;
+            font-size: 40px;
+        }
+        h3{
+        	text-align: center;
+        	color: palevioletred;
+        	margin-top: 30px;
+        	font-size: 25px;
+        }
+        .Image-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            justify-content: center;
+            margin: 50px;
+            color: #ffffff;
+            text-align: center;
+            font-size: 20px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 1600px 900px, cover;
+            min-height: 100vh;
+            padding-top: 100px;
+            padding: 20px;
+        }
+        .Image-container img {
+            width: 500px;
+            height: 300px;
+            object-fit: cover;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .Image-container img:hover {
+           transform: scale(1.1);
+        }
+        .Image-container P:hover { 
+            cursor: pointer;
+            color: #ff0; /* Change the text color to a different color on hover */
+            transition: color 0.3s ease;
+        
+        }
+        .Image-container p {
+		  font-family: "Poppins", sans-serif;
+		  font-weight: bold;
+		  cursor: pointer;
+		  color: #fff;
+		  text-align: center;
+		  margin: 10px 0;
+		  font-size: 18px;
+		  text-transform: uppercase;
+		  letter-spacing: 1px;
+	}

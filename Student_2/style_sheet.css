@@ -1,0 +1,127 @@
+/* styles.css */
+
+
+
+@font-face{
+	font-family: 'Poppins';
+	src:url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap%27);
+}
+
+/* styles for the header and nav bar */
+
+header img {
+	height: 40px;
+	margin-left: 5px;
+	margin-right: 3px;
+				
+}	
+			
+header {
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	background: rgba(24, 24, 24, 0.7);
+	color: #fff;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	padding: 0 10px;
+	z-index: 1;
+}
+			
+			
+			
+header * {
+	display: inline;
+}
+
+
+/* Position the logo name and navigation options */
+.logo-container {
+	display: flex;
+	align-items: center;
+	margin-right:3%;
+}
+
+/* Logo name styles */
+.logo-container .label_name {
+	margin-left: 5px; /* margin between the logo and the logo name */
+	font-size: 17px;
+	font-family: 'Poppins',sans-serif;
+	font-weight: 570px;
+}
+		
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display:flex;
+	align-items: center;
+			  
+}
+
+nav ul li {
+	margin-left: 20px;    /*space between each option*/
+	display: inline-block;
+	position:relative;
+}
+
+nav ul li:first-child {
+	margin-left: 10%; 
+}
+
+
+/* Styling the navigation links */
+nav ul li a {
+	font-family:'Poppins',sans-serif;
+	font-size:14.4px;
+	font-weight: 535px;
+	color: #ffff;
+	text-decoration: none;
+	padding: 10px 20px;
+	position: relative;
+	display: inline-block;        /* To allow the underline to match the text length */
+}
+
+/* Custom underline styles for each li */
+nav ul li::before {
+	content: "";
+	position: absolute;
+	bottom: -2px;     		     /*the vertical position of the underline */
+	left: 50%;         		     /* Center the underline at 50% of the width of the li*/
+	transform: translateX(-50%);   /* Center the underline by moving it left half of its width */
+	width: 0%;
+	height: 2px; 				     /* thickness of the underline */
+	background-color: #e3e5e885;   /* color for the underline */
+	transition: width 0.3s ease;   /* transition for the underline width */
+}
+
+/* Underline transition on hover for each li*/
+nav ul li:hover::before {
+	width: 60%; 			/*underline matching the full text length on hover */
+}
+
+/* Underline transition when link is active for each li */
+nav ul li.active::before {
+	width: 50%; 			/*the length of the underline for active link */
+}
+
+/* Text color change on hover */
+nav ul li a:hover {
+	color: #e3e5e885; 	/*the text color to light gray on hover */
+}
+
+/* styles for the body */
+
+body{
+	background: #121212;
+	
+}
+
+h1,h2,h3,h4,p{
+	font-family:'Poppins',sans-serif;
+	color:#FAF9F6;
+}
+	
+

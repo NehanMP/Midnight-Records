@@ -1,0 +1,376 @@
+<DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Feedback-Form</title>
+		<link rel="stylesheet" type="text/css" href="style_sheet.css">
+	</head>
+		<style>
+			
+			
+			body {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				margin: 0;
+				
+			}
+			
+			/*style for the form box*/
+			.form-container {
+				color: #000000;
+				margin: 0 auto;
+				justify-content: center;
+				align-items: center;
+				background-color: #fff;
+				border: 2px solid #ccc;
+				border-radius: 10px;
+				padding: 20px;
+				width: 80%; 
+				max-width: 600px;
+				box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+				margin-top: 70px;
+			}
+
+			.form-container h2 {
+				text-align: center;
+				margin-bottom: 20px;
+			}
+
+			.question {
+				margin-bottom: 35px;
+				border: 1px solid #ccc; /* make each question appear in a seperate box*/
+				border-radius: 5px;
+				box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /*shadow for the box*/
+				padding:10px 10px;
+				
+			}
+
+			label {
+				display: block;
+				margin-bottom: 5px;
+				font-family : Mulish;
+			}
+			
+			/*style for each input type of the questions*/
+			input[type="text"],
+			input[type="email"],
+			textarea {
+				width: 100%;
+				padding: 10px;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+				height: auto;
+			}
+
+			input[type="text"]:focus,
+			input[type="email"]:focus,
+			textarea:focus {
+				outline: none;
+				border-color: #4CAF50;
+				box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+			}
+
+			input[type="range"] {
+				width: 50%;
+				margin-top: 10px;
+			}
+
+			select {
+				width: 100%;
+				padding: 10px;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+				background-color: #fff;
+			}
+
+			input[type="checkbox"],
+			input [type = "radio"]{
+				margin-right: 5px;
+				display: inline-block;
+				margin-right: 10px;
+				vertical-align: middle;
+			}
+
+			input[type="submit"] {
+				display: block;
+				margin-top: 2px;
+				padding: 15px 25px;
+				background-color:  #CBC3E3;
+				color: #fff;
+				border: none;
+				border-radius: 23px;
+				cursor: pointer;
+				font-size: 16px;
+	
+			}
+
+			input[type="submit"]:hover {
+				background-color: #483248;
+				
+			}
+			
+			.feedback {
+				color: red; 
+				font-size: 8px;
+				margin-top: 5px;  /*create space between input and feedback */
+			}
+			
+			/*style for the footer*/
+			.editor{
+				color: black;
+				text-align: center;
+				padding-left: 135px;
+			}
+
+			.back-top{
+				color: black;
+				float: right;
+			}
+
+			.back-top:hover{
+				color: blue;
+			}
+
+			.editor:hover{
+				color: blue;
+			}
+					
+
+			.icon-imgs{
+				margin-top: 13px;
+				align-items: center;
+				width: auto;
+				height: 30px;
+				margin-right: 18px;
+			}
+
+
+			.socials{
+				width: 100%;
+				text-align: center;     
+				background-color: #A020F0;
+				margin-bottom:0;
+				padding-bottom:0;
+				
+			}
+
+			
+			
+		</style>
+		
+		
+	<body>
+	
+		<header>
+
+			<div class="logo-container">
+				<img src="logo1.png">
+				<span class="label_name">Midnight Records</span>
+			</div>
+			<nav id ="nav">
+				
+				<ul>
+					<li><a href="../Student_2/main_page-cw.html">Home</a></li>
+					<li><a href="../Student_1/shop.html">Store</a></li>
+					<li><a href="../Student_4/gallery.html">Events</a></li>
+					<li><a href="../Student_3/questionpage.html">Quiz</a></li>
+					<li><a href="../Student_4/Sitemap.html">Sitemap</a></li>
+					<li><a href="../Student_3/studentdetails.html">AboutUs</a></li>
+					<li><a href="../Student_2/comments_form.html">Feedback</a></li>		
+				
+				</ul>
+			</nav>
+		</header>
+
+		<div class="form-container">
+			<h2>Usability Feedback Form</h2>
+			<form id = "commentsForm "action="mailto:chriszanne.20220582@iit.ac.lk" method="post" enctype="text/plain" onsubmit = "return submitForm()">
+				<div class="question">
+					<label for="name">Name (required):</label>
+					<input type="text" id="name" name="name" placeholder="Enter your name">
+					<div class="feedback" id="nameFeedback"></div>
+				</div>
+
+				<div class="question">
+					<label for="email">Email (required):</label>
+					<input type="email" id="email" name="email" placeholder="Enter a valid email">
+					<div class="feedback" id="emailFeedback"></div>
+				</div>
+
+				<div class="question">
+					<label for="visual-rating">On a scale of 1 to 10, how visually appealing and on-brand did you find our website?</label>
+					<input type="range" id="visual-rating" name="visual-rating" min="1" max="10" value="5">
+				</div>
+
+				<div class="question">
+					<label for="design-feedback">What aspects of our website's design or branding stood out to you the most and influenced your rating?</label>
+					<textarea id="design-feedback" name="design-feedback" rows="4" cols="50"></textarea>
+				</div>
+
+				<div class="question">
+					<label>Did our website's content about the artists, their releases, and music engage you effectively?</label>
+					<input type="radio" id="content-engage_yes" name="content-engagement" value="Yes">
+					<label for="content-engage_yes">Yes</label>
+					<input type="radio" id="content-engage_no" name="content-engagement" value="No">
+					<label for="content-engage_no">No</label>
+				</div>
+
+				<div class="question">
+					<label for="device-used">Which device did you use to access our website? </label>
+					<select id="device-used" name="device-used">
+						<option value="smartphone">Smartphone</option>
+						<option value="tablet">Tablet</option>
+						<option value="desktop">Desktop</option>
+						<option value="other">Other</option>
+					</select>
+				</div>
+
+				<div class="question">
+					<label for="store-feedback">Were there any challenges you faced while using the store functionality? We value your suggestions on how we can enhance it.</label>
+					<textarea id="store-feedback" name="store-feedback" rows="4" cols="50"></textarea>
+				</div>
+
+				<div class="question">
+					<label>Did you encounter any technical issues or errors while browsing our website?</label>
+					<input type="checkbox" id="technical-issues_yes" name="technical-issues" value="Yes">
+					<label for="technical-issues_yes">Yes</label>
+					<input type="checkbox" id="technical-issues_no" name="technical-issues" value="No">
+					<label for="technical-issues_no">No</label>
+				</div>
+
+				<div class="question">
+					<label for="navigation-rating">How would you rate the ease of navigating through our website?</label>
+					<select id="navigation-rating" name="navigation-rating">
+						<option value="effortless">Effortless</option>
+						<option value="moderate">Moderate</option>
+						<option value="tricky">Tricky</option>
+					</select>
+				</div>
+				
+				<div class="question">
+					<p>Select an emoji that best represents your overall experience using our website :</p>
+					<input type="radio" name="emoji-feedback" value="😊"> 😊
+					<input type="radio" name="emoji-feedback" value="😀"> 😀
+					<input type="radio" name="emoji-feedback" value="😐"> 😐
+					<input type="radio" name="emoji-feedback" value="😕"> 😕
+					<input type="radio" name="emoji-feedback" value="😔"> 😔
+				</div>
+
+				<div class="question">
+					<label for="general-feedback">We're eager to hear your thoughts! Do you have any specific feedback or suggestions to improve our website's design, functionality, or content?</label>
+					<textarea id="general-feedback" name="general-feedback" rows="4" cols="50"></textarea>
+				</div>
+
+				<input type="submit" value="Submit" onclick="return validateForm()">
+			</form>
+		</div>
+		
+		<hr>
+        <div class="socials">          
+            <a href="https://twitter.com/UniWestminster?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"target="_blank"> <img src="twitwe.png" alt="twiter" class="icon-imgs"></a>
+
+            <a href="https://www.facebook.com/UniOfWestminster/" target="_blank"> <img src="facebook.png"  alt="facebook" class="icon-imgs"></a>    
+
+            <a href="https://www.instagram.com/uniwestminster/?hl=en" target="_blank"> <img src="instagram.png" alt="instagram" class="icon-imgs"></a> 
+
+            <a href="https://www.youtube.com/@UniOfWestminster" target="_blank"> <img src="youtube.png" alt="youtube" class="icon-imgs"></a>         
+            <br><br>
+            <p style="text-align: center; font-size: 1.5rem;">All Rights and reserved</p><br>
+   
+            <a href="pageEditorNattasha.html" class="editor">Created by Nattasha Villawarayen</a>
+        	<a href="#top" class="back-top">↑Back to Top</a> 
+                     
+        </div>
+
+
+		 <script>
+			function setActive() {
+			  aObj = document.getElementById('nav').getElementsByTagName('a');
+			  // Loop through each anchor element
+			  for (i = 0; i < aObj.length; i++) {
+				//check if the href attribute of current page has the anchor element's URL
+				if (document.location.href.indexOf(aObj[i].href) >= 0) {
+					// Add the "active" class to the <a> element
+					aObj[i].classList.add('active'); 
+					// Add the "active" class to the parent <li> element
+					aObj[i].parentNode.classList.add('active'); 
+				}
+			  }
+			}
+
+			// Call the function once the HTML elements are loaded
+			document.addEventListener('DOMContentLoaded', setActive);
+				
+			function validateForm() {
+				var nameInput = document.getElementById('name');
+				var emailInput = document.getElementById('email');
+				var nameError = document.getElementById('nameFeedback');
+				var emailError = document.getElementById('emailFeedback');
+
+				// Reset error messages
+				nameError.textContent = '';
+				emailError.textContent = '';
+
+				// Check if Name is empty
+				if (nameInput.value.trim() === '') {
+					nameError.textContent = 'Please enter a name.';
+					nameInput.focus();
+					return false;
+				}
+
+				// Check if Name contains only letters and spaces
+				var nameFormat = /^[a-zA-Z\s]+$/;
+				if (!nameFormat.test(nameInput.value.trim())) {
+					nameError.textContent = 'Name should contain only letters and spaces.';
+					nameInput.focus();
+					return false;
+				}
+
+				// Check if Email is empty
+				if (emailInput.value.trim() === '') {
+					emailError.textContent = 'Please enter an email.';
+					emailInput.focus();
+					return false;
+				}
+
+				// Check if Email contains '@' and text after '@'
+				var emailFormat = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+				if (!emailFormat.test(emailInput.value.trim())) {
+					emailError.textContent = 'Please enter a valid email address.';
+					emailInput.focus();
+					return false;
+				}
+
+				// If all validation passes, the form will be submitted
+				return true;
+			}
+
+			function submitForm() {
+				// Validate the form using the validateForm() function
+				var isFormValid = validateForm();
+
+				if (isFormValid) {
+					// Display a thank you message
+					alert('Thank you for your feedback!');
+
+					// Delayed alert message
+					setTimeout(function() {
+						document.getElementById('commentsForm').reset();
+					}, 1000);
+
+					//Submit the validated form
+					return true;
+				}
+
+				// Form will not submit if the user did not fill any mandatory fields
+				return false;
+			}
+
+			
+		</script>
+		
+
+	</body>
+</html>	

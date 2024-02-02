@@ -1,0 +1,141 @@
+body{
+    text-align: center;
+    background: #9890ab ;
+}
+.image{
+    border-radius: 12px;
+    margin: 50px;
+}
+a:link{
+    color:white;
+    text-decoration: none;
+}
+
+a:active{
+    color: yellow;
+}
+
+a:hover{
+    color: blue;
+}
+a{
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+}
+
+
+
+.text{
+    background-color: white;
+    color: white;
+    font-size: 32px;
+    padding: 10px 75px;
+}
+.container {
+    margin: 0;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.container:hover .textBox {
+    opacity: 1; 
+}
+.container img{
+    border-radius: 12px;
+}
+.container:hover{
+    transform: scale(1.2,1.2);
+    transition: .5s ease;
+}
+.services-boxes{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.textBox{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text{
+    background-color:rgba(0, 0, 0, 0.493);
+    color: white;
+    font-size: 32px;
+    width: 230px;
+    height: 285px;
+}
+.box{
+    padding: 30px;
+}
+
+.socials img{
+    width: 25px;
+}
+#bottomLogo{
+    cursor: pointer;
+    padding-left: 10px;
+    width: 300px;
+    height: 300px;
+}
+.socials{
+    text-align: center;     
+    background-color: rgb(37, 35, 35);      
+}
+
+.container{
+    border-radius: 20px;
+}
+#active:after{
+    width: 100%;
+}
+
+.header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.header img{
+    height: 190px;
+    width: 190px;  
+    filter: drop-shadow(0 0 5px #09001d);
+}
+
+
+.navbar a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 35px;  
+    transition: .3s;
+    filter: drop-shadow(0 0 5px #09001d);
+}
+
+.navbar a:hover,.navbar a.active{
+    color: #c40094;
+}
+
+
+.socials #bottomLogo{
+    height: 200px;
+    width: 200px;    
+}

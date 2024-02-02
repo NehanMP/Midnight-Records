@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+    <title>MR Entertainment</title>
+    <link rel="stylesheet" href="presentation.css">
+</head>
+
+<body class="presentation-bg">
+    <div class="logo">
+        <img src="logo1.png" alt="" class="logo-image">
+    </div>
+    <div class="names">
+        <h1 class="topic"><u>MR Entertainment</u></h1>
+        Nehan Perera - Student 1
+        <br>
+        Nattasha Villavarayan - Student 2
+        <br>
+        Lakhila Wijerathne - Student 3
+        <br>
+        Abhiru Wickramaarachchi - Student 4
+    </div>
+    <a href="pageEditor.html" style="position: fixed; bottom: 20px; left: 20px; color: white;">Page Developer</a>
+    <script>
+        // Event listener to trigger the fade-out effect and redirection
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(function() {
+                document.body.classList.add("fade-out");
+                setTimeout(function() {
+                    window.location.href = "../Student_2/main_page-cw.html";
+                }, 1000); // 1 second before redirection
+            }, 2000); // 2000 milliseconds = 2 seconds
+        });
+    </script>
+</body>
+</html>
+

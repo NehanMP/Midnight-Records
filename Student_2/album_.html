@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Latest Albums</title>
+		<link rel="stylesheet" type="text/css" href="style_sheet.css">
+		<title>Latest Albums</title>
+		<style>
+		
+		
+		
+			
+			/* Styles for the album icons row */
+			.album_anchors {
+				display: flex;
+				margin-top: 20px; /* Add some space before the carousel */
+				justify-content: center;
+				height: 90%;
+				margin-bottom: 40px;
+			
+			}
+
+			/* Styles for each album slide (image and title) */
+			.album_icon {
+				flex: 1;
+				padding: 10px;
+				text-align: center;
+				cursor: pointer;
+				margin-right: 40px;
+				width:200px;
+			}
+
+			/* Optional styling for album images */
+			.album_icon img {
+				width: 150px;
+				height: 150px;
+				border-radius: 50%; /* Make the album images round */
+				margin-bottom: 10px;
+				object-fit: cover; /* Ensure the image maintains its aspect ratio and covers the container */
+			}
+			
+			.album_sections{
+				display: flex;
+				flex-flow:column wrap;
+				gap: 20px;
+				margin-top: 80px;
+				padding-top: 30px;
+			}
+			
+			
+			.album_section {
+				padding: 20px;
+				margin-top:10px;
+				height: 80%;
+				 vertical-align: baseline;
+				position: relative;
+				flex-flow: row-wrap;
+				border-radius: 10px;
+				
+				
+				
+			}
+
+			/* Align text to the left */
+			.album_section p {
+				margin:0;
+				color: #E0E0E0;
+				text-align: justify;
+				font-family: Helvetica;
+				font-size: 18px;
+				flex-flow:column;
+				
+				
+				
+			}
+			
+			.album_section h2{
+				color: #FFFF;
+				font-size:24px;
+				margin: 0;
+			}
+				
+				
+			.album_section h5{
+				color: #BDBDBD;
+				font-size:16px;
+				margin: 0;
+			}
+				
+				
+
+			/* Space between album images and text */
+			.album_section .album_image {
+				margin-right: 10px;
+				height: 35%;
+				width: 60%;
+				border-radius: 15px;
+				object-fit: cover;
+				margin-bottom:20px;
+
+		
+				
+			}
+		
+		    
+			
+			.editor{
+				color: black;
+				text-align: center;
+				padding-left: 135px;
+			}
+
+			.back-top{
+				color: black;
+				float: right;
+			}
+
+			.back-top:hover{
+				color: blue;
+			}
+
+			.editor:hover{
+				color: blue;
+			}
+					
+
+			.icon-imgs{
+				margin-top: 13px;
+				align-items: center;
+				width: auto;
+				height: 30px;
+				margin-right: 18px;
+			}
+
+
+			.socials{
+				width: 100%;
+				text-align: center;     
+				background-color: purple;
+				margin-bottom:0;
+				padding-bottom:0;
+				
+		
+			
+
+
+		</style>
+		
+	</head>
+	<body>
+
+		<header>
+
+			<div class="logo-container">
+				<img src="logo1.png">
+				<span class="label_name">Midnight Records</span>
+			</div>
+			<nav id ="nav">
+				
+				<ul>
+					<li><a href="../Student_2/main_page-cw.html">Home</a></li>
+					<li><a href="../Student_1/shop.html">Store</a></li>
+					<li><a href="../Student_4/gallery.html">Events</a></li>
+					<li><a href="../Student_3/questionpage.html">Quiz</a></li>
+					<li><a href="../Student_4/Sitemap.html">Sitemap</a></li>
+					<li><a href="../Student_3/studentdetails.html">AboutUs</a></li>
+					<li><a href="../Student_2/comments_form.html">Feedback</a></li>		
+				
+				</ul>
+			</nav>
+		</header>
+		<!-- anchor images/icons for each album section-->
+		<div class="album_anchors">
+			<!-- Album 2 -->
+			<div class = "album_icon">
+				<a href="#album1">
+					<img src="bornpink.jpg" alt="Bornpink Album Cover">
+					<h3>By Blackpink</h3>
+				</a>
+			</div>
+
+			<!-- Album 2 -->
+			<div class="album_icon">
+				<a href="#album2">
+					<img src="checkmate.jpg" alt="Checkmate Album Cover">
+					<h3>By Itzy</h3>
+				</a>
+			</div>
+
+			<!-- Album 3-->
+			<div class="album_icon">
+				<a href="#album3">
+					<img src="psycho.png" alt="Psycho Album Cover">
+					<h3>By Red Velvet</h3>
+				</a>
+			</div>
+		</div>
+
+		  <!-- Albums Sections -->
+		<div class="album_sections">
+			<section class="album_section" id="album1">
+				<h2>Born Pink</h2>
+				<h5>album</h5>
+				<img src="bornpink.jpg" alt="bornpink album cover" class = "album_image">
+				
+				<p>Discover the artistry of Blackpink, the world's most prominent girl group, through their captivating second studio album,
+				"Born Pink," which graced the airwaves on September 16, 2022, under the joint collaboration of our Entertainment and Interscope 
+				Records. Following the success of their previous album, "The Album," in 2020, "Born Pink" signifies their triumphant return 
+				with a full-length musical offering.</p><br>
+				
+				<p>This mesmerizing album spans a total of twenty-four minutes and comprises a collection of eight exceptional tracks,
+				with three of them bearing explicit labels. "Born Pink" effortlessly weaves together an eclectic range of genres, 
+				including hip-hop, pop, disco, ballad, alt-pop, pop-rock, stadium rock, punk, EDM, bubblegum pop, and even tasteful 
+				classical interludes. The result is a groundbreaking fusion that showcases Blackpink's versatility and unrivaled talent.</p><br>
+				
+				<p>The album's dynamic progression is captivating, with the first half emanating an aura of "extreme confidence" 
+				and an "untouchable exterior," a testament to the group's unwavering charisma. The second half delves into introspective
+				and "emotionally charged" ballads, offering a glimpse into their vulnerabilities and emotional depth. Throughout the album,
+				the group's mastery of the English language shines brightly, further amplifying the impact of their powerful lyrics and 
+				delivering a "faster" and "shinier" experience compared to their previous work.</p><br>
+			</section>
+
+			<section class="album_section" id="album2">
+				<h2>Checkmate</h2>
+				<h5>album</h5>
+				<img src="checkmate.jpg" alt="checkmate album cover" class = "album_image">
+				<p>Under the banner of MR Entertainment, Itzy presented "Checkmate," their fifth EP that has garnered significant attention.
+				Released on July 15, 2022, in collaboration with JYP Entertainment and Republic Records, the EP comprises seven impressive 
+				tracks, including the lead single "Sneakers".</p><br>
+
+				<p>The success of "Checkmate" has been extraordinary, claiming the top position on South Korea's Circle Album Chart with an
+				astounding 700,000 copies sold in the first week of its release. This achievement marks Itzy's fourth number-one album on the
+				chart and their best-selling album to date. Moreover, the EP received the esteemed "Million" certification from the KMCA for 
+				surpassing 1,000,000 copies sold in September. Internationally, "Checkmate" made a significant 
+				impact, debuting at number eight on the Billboard 200, marking Itzy's first top-ten album in the US.</p><br>
+
+			</section>
+
+			<section class="album_section" id="album3">
+				<h2>Psycho</h2>
+				<h5>album</h5>
+				<img src="psycho.png" alt="psycho album cover" class = "album_image">
+				<p>Red Velvet presented "Psycho," an enchanting song that serves as the lead single from their first compilation album,
+				The ReVe Festival: Finale 2022. This album stands as the triumphant conclusion to their illustrious album trilogy, The ReVe Festival. 
+				Crafted by renowned composers Andrew Scott, Cazzi Opeia, and EJAE, "Psycho" artfully blends R and B, pop, trap, and future bass elements,
+				delving into the intricacies of a complex romantic relationship. Accompanied by a captivating gothic-themed music video, 
+				the single was digitally released on December 23, 2022.</p><br>
+
+				<p>Critics showered "Psycho" with praise, commending its "smooth and sultry" delivery, as well as its "haunting" and "catchy yet 
+				structured" production. Despite its late release in 2022, the song was hailed as one of the finest K-pop tracks of the year.
+				Its success was further solidified by topping charts in Singapore and North America, becoming Red Velvet's second number-one
+				song on the Billboard World Digital Songs chart and elevating them to the ranks of girl groups with the most top-10 entries
+				on the ranking, alongside 2NE1. Additionally, the song achieved remarkable positions on various international charts, including 
+				Malaysia and New Zealand. Notably, it spent three consecutive weeks in the top positions on South Korea's Gaon Digital Chart, 
+				marking Red Velvet's 12th domestic top-10 entry.</p><br>
+
+				<p>Red Velvet's "Psycho" exudes a mesmerizing allure, showcasing the group's undeniable talent and artistry, making it a standout
+				addition to their distinguished discography under our label.</p><br>
+				
+
+			</section>
+	    </div>
+		
+		<hr>
+        <div class="socials">          
+            <a href="https://twitter.com/UniWestminster?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"target="_blank"> <img src="twitwe.png" alt="twiter" class="icon-imgs"></a>
+
+            <a href="https://www.facebook.com/UniOfWestminster/" target="_blank"> <img src="facebook.png"  alt="facebook" class="icon-imgs"></a>    
+
+            <a href="https://www.instagram.com/uniwestminster/?hl=en" target="_blank"> <img src="instagram.png" alt="instagram" class="icon-imgs"></a> 
+
+            <a href="https://www.youtube.com/@UniOfWestminster" target="_blank"> <img src="youtube.png" alt="youtube" class="icon-imgs"></a>         
+            <br><br>
+            <p style="text-align: center; font-size: 1.5rem;">All Rights and reserved</p><br>
+   
+            <a href="pageEditor.html" class="editor">Created by Nattasha Villawarayen</a>
+        	<a href="#top" class="back-top">↑Back to Top</a> 
+                     
+        </div>
+	
+	</body>
+</html>	

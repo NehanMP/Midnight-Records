@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  font-family: 'Poppins', Times new roman;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: url("bg-shop-img.jpg");
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+.content p{
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	line-height: 25px;
+}
+
+.paragraph1 h2{
+	text-align: center;
+	padding-top: 40px;
+}
+
+.paragraph1 p{
+	padding-right: 50px;
+	text-align: center;
+	padding-bottom: 100px;
+	padding-left: 20px;
+	line-height: 25px;
+}
+
+.paragraph2 h2{
+	text-align: center;
+	padding-top: 40px;
+}
+
+.paragraph2 p{
+	padding-right: 50px;
+	text-align: center;
+	padding-bottom: 100px;
+	padding-left: 20px;
+	line-height: 25px;
+}
+
+.picture{
+	border-radius: 10px;
+	flex: 50%;
+}
+
+td h2{
+	color: black;
+	text-decoration: underline;
+}
+
+
+.paragraph1:hover {
+  border: 2px solid black;
+  background-color: black;
+}
+
+.paragraph1:hover h2,
+
+.paragraph1:hover p {
+  color: white;
+}
+
+.paragraph1 .picture {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.paragraph1 {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.paragraph2 {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.paragraph2:hover {
+  border: 2px solid black;
+  background-color: black;
+}
+
+.paragraph2:hover h2,
+
+.paragraph2:hover p {
+  color: white;
+}
+
+hr {
+  border: 0;
+  height: 2px;
+  background-color: black;
+  margin-top: 18px;
+}
+
+.content::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100px; 
+  background-color: black;
+  z-index: -1; 
+}
+
+header img {
+	margin-top: 40px;
+	height: 150px;
+	margin-left: 5px;
+	margin-right: 3px;
+				
+}	
+			
+header {
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	background-color: black;
+	color: #ffffff;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	padding: 0 10px;
+	z-index: 1;
+}		
+
+.editor{
+	color: black;
+	text-align: center;
+	padding-left: 135px;
+	text-decoration: underline;
+}
+
+.back-top{
+	color: black;
+	float: right;
+	text-decoration: underline;
+}
+
+.back-top:hover{
+	color: blue;
+}
+
+.editor:hover{
+	color: blue;
+}
+		
+.icon-imgs{
+	margin-top: 13px;
+	align-items: center;
+	width: auto;
+	height: 30px;
+	margin-right: 18px;
+}
+
+.socials{
+	width: 100%;
+    text-align: center;     
+    background-color: purple;        
+}
+		
+header * {
+	display: inline;
+}
+			
+/* Position the logo name and navigation options */
+.logo-nav-container {
+	display: flex;
+	align-items: center;
+	margin-right: 8%;
+}
+
+.logo-nav-container .title_name {
+	margin-left: 1px; /* margin between the logo and the logo name */
+	font-size: 20px;
+	font-family: 'IFKica-Regular';
+}
+		
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display:flex;
+	align-items: center;
+			  
+}
+
+nav ul li {
+	margin-left: 20px;    /*space between each option*/
+	display: inline-block;
+	position:relative;
+}
+
+nav ul li:first-child {
+	margin-left: 10%; 
+}
+
+/* Styling the navigation links */
+nav ul li a {
+	font-family:'IFKica-Light';
+	font-size:20px;
+	color: #ffff;
+	text-decoration: none;
+	padding: 10px 20px;
+	position: relative;
+	display: inline-block;        /* To allow the underline to match the text length */
+}
+
+/* Custom underline styles for each li */
+nav ul li::before {
+	content: "";
+	position: absolute;
+	bottom: -2px;     		     /*the vertical position of the underline */
+	left: 50%;         		     /* Center the underline at 50% of the width of the li*/
+	transform: translateX(-50%);   /* Center the underline by moving it left half of its width */
+	width: 0%;
+	height: 2px; 				     /* thickness of the underline */
+	background-color: #e3e5e885;   /* color for the underline */
+	transition: width 0.3s ease;   /* transition for the underline width */
+}
+
+/* Underline transition on hover for each li*/
+nav ul li:hover::before {
+	width: 60%; 			/*underline matching the full text length on hover */
+}
+
+/* Underline transition when link is active for each li */
+nav ul li.active::before {
+	width: 50%; 			/*the length of the underline for active link */
+}
+
+/* Text color change on hover */
+nav ul li a:hover {
+	color: #e3e5e885; 	/*the text color to light gray on hover */
+}

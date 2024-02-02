@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+    <title>MR Entertainment - Shopping Cart</title>
+    <link rel="stylesheet" href="shop.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <!--Nav-->
+            <div class="logo-nav-container">
+				<img src="logo1.png" alt="" class="nav-logo-img">
+				<span class="title_name">Midnight Records</span>
+			</div>
+			<nav>		
+				<ul>
+					<li><a href="../Student_2/main_page-cw.html">Home</a></li>
+					<li><a href="../Student_1/shop.html">Store</a></li>
+					<li><a href="../Student_4/gallery.html">Events</a></li>
+					<li><a href="../Student_3/questionpage.html">Quiz</a></li>
+					<li><a href="../Student_4/Sitemap.html">Sitemap</a></li>
+					<li><a href="../Student_3/studentdetails.html">AboutUs</a></li>
+					<li><a href="../Student_2/comments_form.html">Feedback</a></li>			
+				</ul>
+			</nav>
+            <!--Icon-Cart-->
+            <i class='bx bx-shopping-bag' id="cart-icon">View Cart</i>
+            <!--cart-->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <!--info-->
+                <div class="cart-content"></div>
+                <!-- Cal-Total-->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!--Buy Buton-->
+                <button type="button" class="btn-buy">Buy Now</button>
+                <!-- Close Cart-->
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+    <!--JS File-->
+    <script src="shop.js"></script>
+    <!-- Shop -->
+    <section class="shop container">
+        <h2 class="section-title">Album Products</h2>
+        <!--Content-->
+        <div class="shop-content">
+			<!--Box 1 product-->
+			<div class="product-box">
+				<img src="Image1.jpg" alt="" class="product-img">
+				<h2 class="product-title">One Direction Album Set</h2>
+				<span class="price">$325</span>
+				<i class="bx bx-shopping-bag add-cart"></i>
+			</div>
+
+			<!--Box 2 product-->
+			<div class="product-box">
+				<img src="Image4.jpg" alt="" class="product-img">
+				<h2 class="product-title">Backstreet Boys Album Set</h2>
+				<span class="price">$425</span>
+				<i class="bx bx-shopping-bag add-cart"></i>
+			</div>
+
+			<!--Box 3 product-->
+			<div class="product-box">
+				<img src="Image5.jpg" alt="" class="product-img">
+				<h2 class="product-title">5 Seconds of Summer Album Set</h2>
+				<span class="price">$300</span>
+				<i class="bx bx-shopping-bag add-cart"></i>
+			</div>
+
+			<!--Box 4 product-->
+			<div class="product-box">
+				<img src="Image9.jpg" alt="" class="product-img">
+				<h2 class="product-title">Red Velvet Album Set</h2>
+				<span class="price">$300</span>
+				<i class="bx bx-shopping-bag add-cart"></i>
+			</div>		
+
+			<!--Box 5 product-->
+			<div class="product-box">
+				<img src="Image3.jpg" alt="" class="product-img">
+				<h2 class="product-title">Vamps Album Set</h2>
+				<span class="price">$350</span>
+				<i class="bx bx-shopping-bag add-cart"></i>
+			</div>
+
+			<!--Box 6 product-->
+			<div class="product-box">
+				<img src="Image6.jpg" alt="" class="product-img">
+				<h2 class="product-title">BlackPink Album Set</h2>
+				<span class="price">$500</span>
+				<i class="bx bx-shopping-bag add-cart"></i>
+			</div>
+
+			<!--Box 7 product-->
+			<div class="product-box">
+				<img src="Image8.jpg" alt="" class="product-img">
+				<h2 class="product-title">Little Mix Album Set</h2>
+				<span class="price">$450</span>
+				<i class="bx bx-shopping-bag add-cart"></i>
+			</div>
+			
+			<!--Box 8 product-->
+			<div class="product-box">
+				<img src="Image2.jpg" alt="" class="product-img">
+				<h2 class="product-title">West Life Album Set</h2>
+				<span class="price">$275</span>
+				<i class="bx bx-shopping-bag add-cart"></i>
+			</div>
+
+			<!--Box 9 product-->
+			<div class="product-box">
+				<img src="Image7.jpg" alt="" class="product-img">
+				<h2 class="product-title">Fifth Harmony Album Set</h2>
+				<span class="price">$400</span>
+				<i class="bx bx-shopping-bag add-cart"></i>
+			</div>
+		</div>
+	</section>
+    <section class="user-details container">
+        <h2 class="section-title">User Details</h2>
+        <form>
+            <div class="form-control">
+                <label for="delivery-express">Delivery-Express:</label>
+                <input type="checkbox" id="delivery-express" name="delivery-express">
+            </div>
+            <div class="form-control">
+                <label for="user-name">Name:</label>
+                <input type="text" id="user-name" name="user-name" required>
+            </div>
+            <div class="form-control">
+                <label for="user-email">Email:</label>
+                <input type="email" id="user-email" name="user-email" required>
+            </div>
+        </form>
+    </section>
+    <hr>
+    <div class="socials">          
+        <a href="https://twitter.com/UniWestminster?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"target="_blank"> <img src="twitwe.png" alt="twiter" class="icon-imgs"></a>
+
+        <a href="https://www.facebook.com/UniOfWestminster/" target="_blank"> <img src="facebook.png"  alt="facebook" class="icon-imgs"></a>    
+
+        <a href="https://www.instagram.com/uniwestminster/?hl=en" target="_blank"> <img src="instagram.png" alt="instagram" class="icon-imgs"></a> 
+
+        <a href="https://www.youtube.com/@UniOfWestminster" target="_blank"> <img src="youtube.png" alt="youtube" class="icon-imgs"></a>         
+        <br><br>
+        <p style="text-align: center; font-size: 1.5rem;">All Rights and reserved</p><br>
+
+        <a href="pageEditor.html" class="editor">Created by Nehan Perera</a>
+    	<a href="#top" class="back-top">↑Back to Top</a>                             
+    </div> 
+</body>
+</html>
