@@ -5,7 +5,7 @@ The website showcases various pages designed and developed by different collabor
 
 ## Collaborators
 <li>Nehan Perera:</li>
-Website store<br>
+<ul>Website store</ul><br>
 Presentation page<br>
 Additional page<br><br>
 
