@@ -14,30 +14,30 @@ The website showcases various pages designed and developed by different collabor
       </ul>
     </li>
 
-    <li>
-      <h3>Nattasha Villawarayen</h3>
-      <ul>
-        <li>Home page</li>
-        <li>Website Form</li>
-        <li>Additional page</li>
-      </ul>
-    </li>
+<li>
+  <h3>Nattasha Villawarayen</h3>
+  <ul>
+    <li>Home page</li>
+    <li>Website Form</li>
+    <li>Additional page</li>
+  </ul>
+</li>
 
-    <li>
-      <h3>Lakhila Wijerathne</h3>
-      <ul>
-        <li>Quiz page</li>
-        <li>About Us page</li>
-        <li>Additional page</li>
-      </ul>
-    </li>
+<li>
+  <h3>Lakhila Wijerathne</h3>
+  <ul>
+    <li>Quiz page</li>
+    <li>About Us page</li>
+    <li>Additional page</li>
+  </ul>
+</li>
 
-    <li>
-      <h3>Abhiru Wickramarachchi</h3>
-      <ul>
-        <li>Gallery page</li>
-        <li>Site map</li>
-        <li>Additional page</li>
-      </ul>
-    </li>
-  </ol>
+<li>
+  <h3>Abhiru Wickramarachchi</h3>
+  <ul>
+    <li>Gallery page</li>
+    <li>Site map</li>
+    <li>Additional page</li>
+  </ul>
+</li>
+</ol>
