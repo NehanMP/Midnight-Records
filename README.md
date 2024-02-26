@@ -4,22 +4,40 @@ Midnight Records is a group project created by the students of IIT for their 1st
 The website showcases various pages designed and developed by different collaborators, each focussing on different aspects of the project.
 
 ## Collaborators
-<li>Nehan Perera:</li>
-<ul>Website store
-Presentation page
-Additional page</ul>
+<ol>
+    <li>
+      <h3>Nehan Perera</h3>
+      <ul>
+        <li>Website store</li>
+        <li>Presentation page</li>
+        <li>Additional page</li>
+      </ul>
+    </li>
 
-<li>Nattasha Villawarayen</li>
-Home page<br>
-Website Form<br>
-Additional page<br><br>
+    <li>
+      <h3>Nattasha Villawarayen</h3>
+      <ul>
+        <li>Home page</li>
+        <li>Website Form</li>
+        <li>Additional page</li>
+      </ul>
+    </li>
 
-<li>Lakhila Wijerathne</li>
-Quiz page<br>
-About Us page<br>
-Additional page<br><br>
+    <li>
+      <h3>Lakhila Wijerathne</h3>
+      <ul>
+        <li>Quiz page</li>
+        <li>About Us page</li>
+        <li>Additional page</li>
+      </ul>
+    </li>
 
-<li>Abhiru Wickramarachchi</li>
-Gallery page<br>
-Site map<br>
-Additional page
+    <li>
+      <h3>Abhiru Wickramarachchi</h3>
+      <ul>
+        <li>Gallery page</li>
+        <li>Site map</li>
+        <li>Additional page</li>
+      </ul>
+    </li>
+  </ol>
