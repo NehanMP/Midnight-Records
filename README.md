@@ -41,3 +41,10 @@ The website showcases various pages designed and developed by different collabor
   </ul>
 </li>
 </ol>
+
+## Technology Used
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+</ul>
