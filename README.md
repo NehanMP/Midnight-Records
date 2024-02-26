@@ -5,9 +5,9 @@ The website showcases various pages designed and developed by different collabor
 
 ## Collaborators
 <li>Nehan Perera:</li>
-<ul>Website store</ul>
-<ul>Presentation page</ul>
-<ul>Additional page</ul>
+<ul>Website store
+Presentation page
+Additional page</ul>
 
 <li>Nattasha Villawarayen</li>
 Home page<br>
